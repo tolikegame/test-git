@@ -13,10 +13,12 @@ public class Test {
 
     @GetMapping("/a")
     public String a(){
-        String str= "返回一個新字串，它是此字串的一個子字串。該子字串從指定的 beginIndex 處開始， endIndex:到指定的 endIndex-1處結束。"
-                ;
-
         return "Hello";
+    }
+
+    @GetMapping("/git")
+    public String git(){
+        return "test";
     }
 
     public static void main(String[] args) {
